@@ -1,0 +1,6 @@
+install.packages("tidyverse")
+install.packages("lubridate")
+library(tidyverse)
+library(lubridate)
+crimes <- read_csv("D:/III Year/SDP/Project/crime_analysis-master/sample_data/crime_data.csv") %>% 
+  mutate(date = ymd(date))
